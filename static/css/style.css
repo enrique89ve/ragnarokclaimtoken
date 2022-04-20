@@ -1,0 +1,365 @@
+body{
+
+    margin: 0;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://ragnaroknft.quest/wp-content/uploads/sites/3/2022/04/backimage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 85%;
+    max-width: 100%;
+    
+    min-height: 100%;
+}
+
+.keychain{
+    padding: 12px;
+    margin-left: 10%;
+    max-width: 50%;
+    width: 100px;
+
+}
+
+.hivesigner{
+    
+    margin-left: 65%;
+    max-width: 50%;
+    width: 180px;
+
+}
+
+.form{
+
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 70px;
+    padding-bottom: 25px;
+    margin: 25px;
+    margin-bottom: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+
+.text-gray{
+
+    color:#000000a6;
+    position: sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+    padding: 20px;
+    border-style: none;
+    
+}
+
+
+.text-gray-tb{
+
+    text-align: left;
+    color: rgba(0, 0, 0, 0.61);
+
+}
+
+
+.form-control {
+
+    padding: 0.7rem 0.75rem;
+
+}
+
+
+.navbar {
+
+    position: absolute;
+
+}
+
+.pie {
+
+    display: block;
+    height: 50px;
+    line-height: 20px;
+
+}
+
+.pie.bg-light.text-center.text-lg-start.pie {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+.btn-groupform{
+
+    display: flex;
+    flex-direction: row;
+    
+    
+
+
+}
+
+
+.btnimage:hover  {
+
+    background-color: #28303D;
+    border: #000000;
+
+}
+
+
+.boton  {
+
+    background-color: #E18704;
+    border: #efeff0;
+    
+}
+
+.boton:hover  {
+
+    background-color: #28303D;
+    border: #879AF8;
+
+}
+
+
+.container {
+
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left:auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    vertical-align: top;
+       
+}
+
+
+
+
+
+
+.formulario {
+
+    width: 100%;
+    grid-auto-rows: auto;
+    align-self: center;   
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-block-end: 80px;
+    margin-bottom: 80 px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(224, 221, 221);
+    box-shadow: 0px 10px 14px -7px #e18904bb;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    max-width: max-content;
+    border-radius: 15px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #000000;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    align-items:center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: flex;
+  padding: auto;
+  flex-direction: row;
+  color: #ffffff;
+  text-align: center;
+  
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.btnimage  {
+
+
+    
+
+
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 15px
+
+
+
+
+}
+
+
+
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  
+  color: rgb(255, 255, 255);
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  
+  color: rgb(255, 255, 255);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+
+.alertamsj {
+
+    display: block;
+    width: 100%;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 321px) and (max-width: 915px) {
+
+    body .topnav a {
+
+        font-size: 55%;
+    
+        
+        }
+    
+
+
+
+        .keychain{
+            margin-left:5%;
+
+            padding: 5px;
+            height: 25%;
+            
+            width: 25%;
+            
+        
+        }
+        
+        .hivesigner{
+            
+            margin-left: 60%;
+            height: 25%;
+            padding: 10px;
+            
+            width: 115%;
+            max-width: max-content;
+        
+        }
+
+
+
+    .topnav {
+        align-self: center;  
+
+
+        
+        width: auto;
+        margin-right: 5px;
+        margin-left: 5px;
+        
+
+
+    }
+
+
+
+    .formulario, .boton {
+       
+        
+        margin-right: 5px;
+        margin-left: 5px;
+        padding-right: 50px;
+        padding-left: 50px;
+      
+
+    }
+
+
+    .form-label {
+
+        font-size: 55%;
+        
+
+        
+
+
+    }
+
+
+    
+    .mx-auto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+    
+
+    
+.alertamsj, .h6 {
+    font-size: 40%;
+    text-align: center;
+    display: block;
+    width: 280px;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+
+
+}
+
+        
+    
+ }
