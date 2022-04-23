@@ -5,7 +5,7 @@ from wtforms.validators import InputRequired, Length
 
 class consulta(Form):
     username = StringField('username', validators=[InputRequired(),
-                                             Length(min=4, max=12)])
+                                             Length(min=4, max=15)])
 
 
 

@@ -32,26 +32,57 @@ def accountapi(ac):
 
 
 
-
-
-
-
-
-
-
 @app.route('/', methods=["GET", "POST"])
 def claim():
 
 
+    
+
+
     try:
 
-        form = consulta(request.form)
-        x= '{"claim":true}'
-        valor = x
-        id = "duat_drop_claim"
+        if request.method == 'POST':
+            time.sleep(30)
+            return render_template( "base.html")
+            
+
+            
+
+        
+
+        else:
+            
+
+
+            
 
         
         
+
+            
+
+            return render_template( "base.html")
+
+           
+
+    
+        
+
+        
+    except (UnboundLocalError):
+
+        return render_template("base.html")
+
+
+
+@app.route('/stats', methods=["GET", "POST"])
+def stats():
+
+    try:
+        form = consulta(request.form)
+
+
+            
         
         if request.method == 'POST' and form.validate():
 
@@ -78,7 +109,7 @@ def claim():
 
                 if not username_is_valid(ac):
 
-                    return render_template("formext.html", error = "invalid user" ) 
+                    return render_template("statsext.html", error = "invalid user" ) 
 
                     
 
@@ -99,49 +130,46 @@ def claim():
                     else: 
                         data = accountapi(ac)
 
+
+                        balance = data['balance']
+
+                        tokens = balance/1000
+
                         drop = data['drop']
 
                         snap = drop['availible']
 
 
+
+
+
                         cantidad = snap['amount']/1000
 
-                        datos  = (" %s Pending to claim %s Tokens" % (ac, cantidad ))
+                        if cantidad == 0:
 
+                            reclamados = "Already claimed"
 
-                        
+                            datos  = (" @%s your balance %s DUAT / %s" % (ac, tokens, reclamados,  ))
 
-                
-            else: 
+                        else: 
+                            reclamados = cantidad
+                    
 
+                            datos  = (" @%s your balance: %s DUAT / Pending to claim %s Tokens" % (ac, tokens, reclamados,  ))
 
-                return render_template("formext.html", error = "error" ) 
-                
-            return render_template("formext.html", monto = datos, valor = x, id = id ) 
-        
-        else:
+                        datos = datos
 
-            return render_template("form.html", valor = x, id = id)
+            return render_template("statsext.html", datos = datos)
 
-
-
-            
-
-    
-        
-
-        
+        return render_template("stats.html")
     except (UnboundLocalError):
 
-        return render_template("form.html", form = form)
-
-
-
-        
+        return render_template("stats.html", form = form)
+    
 @app.errorhandler(404)
 def page_not_found(e):
     # note that we set the 404 status explicitly
-    return render_template('form.html'), 404
+    return render_template('base.html'), 404
         
 
 
