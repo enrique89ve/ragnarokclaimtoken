@@ -6,7 +6,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 85%;
     max-width: 100%;
     
@@ -14,18 +14,22 @@ body{
 }
 
 .keychain{
-    padding: 12px;
-    margin-left: 10%;
-    max-width: 50%;
-    width: 100px;
+    padding: 10px;
 
+    
+    width: 70px;
+    height: 70px;
 }
 
 .hivesigner{
+
+
+    padding: 16px;
+
+    height: 70px;
+
     
-    margin-left: 65%;
-    max-width: 50%;
-    width: 180px;
+    width: 68px;
 
 }
 
@@ -101,12 +105,45 @@ body{
 .btn-groupform{
 
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-block-start: 2px;
+    margin-left: 25px;
+    margin-right: 25px;
     
     
 
 
 }
+
+
+.dex {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #494949 5%, #040404 100%);
+	background-color:#ffec64;
+	border-radius:8px;
+	border:2px solid #160d01;
+	display:inline-block;
+	cursor:pointer;
+	color:#fcfcfc;
+	font-size:15px;
+	font-weight:bold;
+	padding:12px 38px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffee66;
+}
+.dex:hover {
+	background:linear-gradient(to bottom, #855200 5%, #E18704 100%);
+    color:#ffffff;
+	background-color:#5e3a00;
+}
+.dex:active {
+	position:relative;
+    color:#ffffff;
+	top:1px;
+}
+
+     
 
 
 .btnimage:hover  {
@@ -132,6 +169,16 @@ body{
 }
 
 
+.input-group>.form-control {
+    
+    text-align: center;
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 100%;
+    margin-bottom: 0;
+}
 .container {
 
     padding-right: 30px;
@@ -147,12 +194,20 @@ body{
 
 
 
+.input-group{
 
+
+    display: block;
+
+
+    width: 100%;
+}
 
 
 .formulario {
-
-    width: 100%;
+   
+    display: block;
+    width: 40%;
     grid-auto-rows: auto;
     align-self: center;   
     padding-right: 30px;
@@ -161,11 +216,11 @@ body{
     margin-bottom: 80 px;
     margin-right: auto;
     margin-left: auto;
-    background-color: rgb(224, 221, 221);
+    background-color: rgba(224, 221, 221, 0.84);
     box-shadow: 0px 10px 14px -7px #e18904bb;
     padding-top: 25px;
-    padding-bottom: 30px;
-    max-width: max-content;
+    padding-bottom: 25px;
+    max-width: 450px;
     border-radius: 15px;
     
     
@@ -192,12 +247,12 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
     justify-content: space-around;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     align-items:center;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav menu {
   float: left;
   display: flex;
   padding: auto;
@@ -225,7 +280,22 @@ body{
 
 }
 
+.iconoabajo  {
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 15px;
 
+
+
+
+}
+
+.bi {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
 
 
 
@@ -246,11 +316,15 @@ body{
   display: none;
 }
 
-
+a {
+    color: #f09409;
+    background-color: transparent;
+    
+}
 
 .alertamsj {
 
-    display: block;
+    display: flex;
     width: 100%;
     align-self: center;
     align-content: center;
@@ -270,32 +344,30 @@ body{
         font-size: 55%;
     
         
-        }
+    }
     
 
 
 
-        .keychain{
-            margin-left:5%;
+    .keychain{
+        
 
-            padding: 5px;
-            height: 25%;
-            
-            width: 25%;
+        padding: 5px;
+        width: 80px;
+        height: 80px;
+        
             
         
-        }
+    }
         
-        .hivesigner{
+    .hivesigner{
             
-            margin-left: 60%;
-            height: 25%;
-            padding: 10px;
-            
-            width: 115%;
-            max-width: max-content;
-        
-        }
+
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+    
+    }
 
 
 
@@ -315,13 +387,24 @@ body{
 
 
     .formulario, .boton {
-       
+
+        width: 80%;
+        grid-auto-rows: auto;
+        align-self: center;   
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-block-end: 80px;
+        margin-bottom: 80 px;
+        margin-right: auto;
+        margin-left: auto;
         
-        margin-right: 5px;
-        margin-left: 5px;
-        padding-right: 50px;
-        padding-left: 50px;
-      
+        box-shadow: 0px 10px 14px -7px #e18904bb;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        max-width: 100%;
+        border-radius: 15px;
+        
+        
 
     }
 
@@ -348,18 +431,18 @@ body{
     
 
     
-.alertamsj, .h6 {
-    font-size: 40%;
-    text-align: center;
-    display: block;
-    width: 280px;
-    align-self: center;
-    align-content: center;
-    align-items: center;
+    .alertamsj, .h6 {
+        font-size: 40%;
+        text-align: center;
+        display: block;
+        width: 280px;
+        align-self: center;
+        align-content: center;
+        align-items: center;
 
 
-}
+    }
 
         
     
- }
+}
